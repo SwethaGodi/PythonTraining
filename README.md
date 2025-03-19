@@ -1,194 +1,168 @@
-__add__     #Concatenates two strings
-
->>>a = "Hello"
->>>b = "World"
->>>print(a.__add__(b))  
-HelloWorld
--------------------------------------------------
-
-__class__   #Returns the class of the object
+#__add__     Concatenates two strings
 
 a = "Hello"
-print(a.__class__)  # Output: <class 'str'>
---------------------------------------------------
+b = "World"
+print(a.__add__(b))  
 
-__contains__  #Checks if a substring is present
+#__class__   Returns the class of the object
 
->>>a = "Hello World"
->>>print(a.__contains__("World"))  
-True
---------------------------------------------------
+a = "Hello"
+print(a.__class__)  
 
-__dir__   #Returns a list of all attributes and methods of an object.
 
->>>a = "Hello"
->>>print(a.__dir__())  
-List of all string methods and attributes
-------------------------------------------------------------------------
+#__contains__  Checks if a substring is present
 
-__doc__		#Returns the documentation string of an object.
+a = "Hello World"
+print(a.__contains__("World"))  
 
->>>print(str.__doc__)  
-Documentation string of the str class
----------------------------------------------------------------------
 
-__eq__     #Checks if two strings are equal
+#__dir__   Returns a list of all attributes and methods of an object.
 
->>>a = "Hello"
->>>b = "Hello"
->>>print(a.__eq__(b))  
-True
---------------------------------------------------
+a = "Hello"
+print(a.__dir__())
 
-__getitem__   #Gets a character at an index
 
->>>a = "Hello"
->>>print(a.__getitem__(4))  
-o
---------------------------------------------------
+#__doc__		Returns the documentation string of an object.
 
-__len__        #Gets the length of the string
+print(str.__doc__)  
 
->>>a = "Hello"
->>>print(a.__len__())  
-5
---------------------------------------------------
 
-capitalize()    #Converts the first character to uppercase.
+#__eq__     Checks if two strings are equal
 
->>>var = "hello world"
->>>print(var.capitalize())  
-Hello world
---------------------------------------------------
-casefold()    #Converts the string to lowercase.
+a = "Hello"
+b = "Hello"
+print(a.__eq__(b))  
 
->>>var = "SWETHA"
->>>print(var.casefold())  
-swetha
---------------------------------------------------
 
-center(width)    #Centers the string within the specified width.
+#__getitem__   #Gets a character at an index
 
->>>var = "swetha"
->>>print(var.center(20, "-"))  
--------swetha-------
---------------------------------------------------
+a = "Hello"
+print(a.__getitem__(4))
 
-count(substring)   #Counts occurrences of a substring.
 
->>>var = "Swethaaa"
->>>print(var.count("a"))  
-3
-----------------------------------------------------
+#__len__        Gets the length of the string
 
-endswith(suffix)   #Checks if a string ends with a certain substring.
+a = "Hello"
+print(a.__len__())
 
->>>var = "hello.txt"
->>>print(var.endswith(".txt"))  
-True
-------------------------------------------------------------------
 
-find(substring)     #Finds the first occurrence of a substring
+#capitalize()    Converts the first character to uppercase.
 
->>>var = "hello world"
->>>print(var.find("world"))  
-6
---------------------------------------------------------------
+var = "hello world"
+print(var.capitalize())  
 
-format()         #Formats a string
 
->>>var = "My name is {}"
->>>print(var.format("Swetha"))  
-My name is Swetha
---------------------------------------------------------------
+#casefold()    Converts the string to lowercase.
 
-index(substring)   #Finds the first occurrence of a substring (raises an error if not found)
+var = "SWETHA"
+print(var.casefold()) 
 
->>>var = "hello world"
->>>print(var.index("world"))  
- 6
---------------------------------------------------------------
 
-isalnum()   #Checks if all characters are alphanumeric
+#center(width)    Centers the string within the specified width.
 
->>>var = "Hello123"
->>>print(var.isalnum())  
-True
----------------------------------------------------------------
+var = "swetha"
+print(var.center(20, "-")) 
 
-isalpha()  #Checks if all characters are alphabetic
 
->>>var = "Hello"
->>>print(var.isalpha())  
-True
----------------------------------------------------------------
+#count(substring)   Counts occurrences of a substring.
 
-isdigit()  #Checks if all characters are digits
+var = "Swethaaa"
+print(var.count("a"))
 
->>>var = "12345"
->>>print(var.isdigit())  
-True
----------------------------------------------------------------
 
-join(iterable)   #Joins elements of an iterable with the string as a separator
+#endswith(suffix)   Checks if a string ends with a certain substring.
 
->>>words = ["Hello", "World"]
->>>print(" ".join(words))  
-Hello World
------------------------------------------------------------------------------
+var = "hello.txt"
+print(var.endswith(".txt"))
 
-lower()        #Converts all characters to lowercase.
 
->>>var = "Hello"
->>>print(var.lower())  
-hello
-------------------------------------------------------------------------------
+#find(substring)     Finds the first occurrence of a substring
 
-replace(old, new)   #Replaces occurrences of a substring.
+var = "hello world"
+print(var.find("world"))
 
->>>var = "Hello World"
->>>print(var.replace("World", "Python"))  
-Hello Python
-------------------------------------------------------------------------------
 
-split(delimiter)    #Splits a string into a list.
+#format()         Formats a string
 
->>>var = "hello,python,test"
->>>print(var.split(","))  
-['hello', 'python', 'test']
--------------------------------------------------------------------------------
+var = "My name is {}"
+print(var.format("Swetha"))
 
-strip()     #Removes leading and trailing spaces.
 
->>>var = "  Hello World  "
->>>print(var.strip())  
-Hello World
--------------------------------------------------------------------------------
+#index(substring)   Finds the first occurrence of a substring (raises an error if not found)
 
-title()    #Converts the first character of each word to uppercase.
+var = "hello world"
+print(var.index("world"))
 
->>>var = "hello world"
->>>print(var.title())  
-Hello World
--------------------------------------------------------------------------------
 
-upper()   #Converts all characters to uppercase.
+#isalnum()   Checks if all characters are alphanumeric
 
->>>var = "hello"
->>>print(var.upper())  
-HELLO
--------------------------------------------------------------------------------
+var = "Hello123"
+print(var.isalnum()) 
 
-lower()    #Converts all characters to lowercase.
->>> var="HELLO"
->>> print(var.lower())
-hello
--------------------------------------------------------------------------------
 
-zfill(width)    #Pads the string with zeros.
+#isalpha()  Checks if all characters are alphabetic
+
+var = "Hello"
+print(var.isalpha())
+
+
+#isdigit()  Checks if all characters are digits
+
+var = "12345"
+print(var.isdigit())
+
+
+#join(iterable)   Joins elements of an iterable with the string as a separator
+
+words = ["Hello", "World"]
+print(" ".join(words))
+
+
+#lower()        Converts all characters to lowercase.
+
+var = "Hello"
+print(var.lower())
+
+
+#replace(old, new)   Replaces occurrences of a substring.
+
+var = "Hello World"
+print(var.replace("World", "Python")) 
+
+
+#split (delimiter)    Splits a string into a list.
+
+var = "hello,python,test"
+print(var.split(","))
+
+
+
+#strip()     Removes leading and trailing spaces.
+
+var = "  Hello World  "
+print(var.strip()) 
+
+
+#title()    Converts the first character of each word to uppercase.
+
+var = "hello world"
+print(var.title())  
+
+
+#upper()   Converts all characters to uppercase.
+
+var = "hello"
+print(var.upper()) 
+
+
+#lower()    Converts all characters to lowercase.
+var="HELLO"
+print(var.lower())
+
+
+#zfill(width)    Pads the string with zeros.
 
 var = "42"
-print(var.zfill(5))  
-00042
--------------------------------------------------------------------------------
+print(var.zfill(5)) 
+
 
