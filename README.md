@@ -58,25 +58,25 @@ var = "SWETHA"
 print(f"Output of casefold:: {var.casefold()}") 
 
 
-#center(width)    Centers the string within the specified width.
+#center()    Centers the string within the specified width.
 
 var = "swetha"
 print(f"Output of center:: {var.center(20, "-")}") 
 
 
-#count(substring)   Counts occurrences of a substring.
+#count()   Counts occurrences of a substring.
 
 var = "Swethaaa"
 print(f"Output of count:: {var.count("a")}")
 
 
-#endswith(suffix)   Checks if a string ends with a certain substring.
+#endswith()   Checks if a string ends with a certain substring.
 
 var = "hello.txt"
 print(f"Output of endswith:: {var.endswith(".txt")}")
 
 
-#find(substring)     Finds the first occurrence of a substring
+#find()     Finds the first occurrence of a substring
 
 var = "hello world"
 print(f"Output of find:: {var.find("world")}")
@@ -88,7 +88,7 @@ var = "My name is {}"
 print(f"Output of format:: {var.format("Swetha")}")
 
 
-#index(substring)   Finds the first occurrence of a substring (raises an error if not found)
+#index()   Finds the first occurrence of a substring (raises an error if not found)
 
 var = "hello world"
 print(f"Output ofindex:: {var.index("world")}")
@@ -126,7 +126,7 @@ var = "12345"
 print(f"Output ofisdigit:: {var.isdigit()}")
 
 
-#join(iterable)   Joins elements of an iterable with the string as a separator
+#join()   Joins elements of an iterable with the string as a separator
 
 words = ["Hello", "World"]
 print(f"Output of join:: {" ".join(words)}")
@@ -138,13 +138,13 @@ var = "Hello"
 print(f"Output of lower:: {var.lower()}")
 
 
-#replace(old, new)   Replaces occurrences of a substring.
+#replace()   Replaces occurrences of a substring.
 
 var = "Hello World"
 print(f"Output of replace:: {var.replace("World", "Python")}") 
 
 
-#split (delimiter)    Splits a string into a list.
+#split ()    Splits a string into a list.
 
 var = "hello,python,test"
 print(f"Output of split:: {var.split(",")}")
@@ -174,7 +174,7 @@ var="HELLO"
 print(f"Output of lower:: {var.lower()}")
 
 
-#zfill(width)    Pads the string with zeros.
+#zfill()    Pads the string with zeros.
 
 var = "42"
 print(f"Output of zfill::{var.zfill(5)}") 
@@ -226,7 +226,7 @@ print(f"Output of lstrip:: {var.lstrip()}")
 var = "Swetha   "
 print(f"Output of rstrip:: {var.rstrip()}")
 
-#rfind(sub)		Returns the last index of a substring. Returns -1 if not found
+#rfind()		Returns the last index of a substring. Returns -1 if not found
 
 var = "Swetha"
 print(f"Output of rfind:: {var.rfind("e")}")
