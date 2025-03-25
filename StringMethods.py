@@ -9,7 +9,6 @@ print(f"Output of __add__:: {a.__add__(b)}")
 a = "Hello"
 print(f"Output of__class__:: {a.__class__}")  
 
-
 #__contains__  Checks if a substring is present
 
 a = "Hello World"
